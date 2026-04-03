@@ -1,0 +1,32 @@
+Station,transit_time_sec,boarding_on_AM,boarding_off_AM,boarding_off_peak,descending_off_peak
+Côte-Vertu,66,1200,0,300,0
+Du Collège,92,750,225,225,75
+De La Savane,65,375,150,120,60
+Namur,76,450,225,150,75
+Plamondon,46,675,375,180,120
+Côte-Sainte-Catherine,60,825,450,225,150
+Snowdon,70,975,675,300,225
+Villa-Maria,103,450,225,150,75
+Vendôme,103,900,675,270,225
+Place-Saint-Henri,55,375,225,120,75
+Lionel-Groulx,64,1350,900,375,300
+Georges-Vanier,53,225,150,75,45
+Lucien-L'Allier,49,450,900,150,300
+Bonaventure,43,675,1350,225,450
+Square-Victoria-OACI,43,900,1200,300,375
+Place-d'Armes,43,450,675,150,225
+Champ-de-Mars,84,225,375,75,120
+Berri-UQAM,56,1200,900,375,300
+Sherbrooke,74,675,375,180,120
+Mont-Royal,53,750,450,225,150
+Laurier,63,450,375,150,120
+Rosemont,52,675,375,180,120
+Beaubien,61,750,450,225,150
+Jean-Talon,76,975,675,300,225
+Jarry,67,450,375,150,120
+Crémazie,99,450,375,150,120
+Sauvé,94,750,450,225,150
+Henri-Bourassa,86,1050,450,300,150
+Cartier,132,755,63,129,94
+De La Concorde,96,375,150,120,60
+Montmorency,0,150,750,75,225

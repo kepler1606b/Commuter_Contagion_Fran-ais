@@ -1,0 +1,32 @@
+Station,transit_time_sec,distance_in_km,boarding_on_AM,boarding_off_AM,boarding_off_peak,descending_off_peak
+Côte-Vertu,66,0.7333,1200,0,300,0
+Du Collège,92,1.0222,750,225,225,75
+De La Savane,65,0.7222,375,150,120,60
+Namur,76,0.8444,450,225,150,75
+Plamondon,46,0.5111,675,375,180,120
+Côte-Sainte-Catherine,60,0.6667,825,450,225,150
+Snowdon,70,0.7778,975,675,300,225
+Villa-Maria,103,1.1444,450,225,150,75
+Vendôme,103,1.1444,900,675,270,225
+Place-Saint-Henri,55,0.6111,375,225,120,75
+Lionel-Groulx,64,0.7111,1350,900,375,300
+Georges-Vanier,53,0.5889,225,150,75,45
+Lucien-L'Allier,49,0.5444,450,900,150,300
+Bonaventure,43,0.4778,675,1350,225,450
+Square-Victoria-OACI,43,0.4778,900,1200,300,375
+Place-d'Armes,43,0.4778,450,675,150,225
+Champ-de-Mars,84,0.9333,225,375,75,120
+Berri-UQAM,56,0.6222,1200,900,375,300
+Sherbrooke,74,0.8222,675,375,180,120
+Mont-Royal,53,0.5889,750,450,225,150
+Laurier,63,0.7,450,375,150,120
+Rosemont,52,0.5778,675,375,180,120
+Beaubien,61,0.6778,750,450,225,150
+Jean-Talon,76,0.8444,975,675,300,225
+Jarry,67,0.7444,450,375,150,120
+Crémazie,99,1.1,450,375,150,120
+Sauvé,94,1.0444,750,450,225,150
+Henri-Bourassa,86,0.9556,1050,450,300,150
+Cartier,132,1.4667,755,63,129,94
+De La Concorde,96,1.0667,375,150,120,60
+Montmorency,0,0.0,150,750,75,225
