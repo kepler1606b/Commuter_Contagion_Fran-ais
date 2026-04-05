@@ -85,6 +85,11 @@ class SimApp:
         self.compliance = tk.DoubleVar(value=0.0)
         ttk.Scale(left_panel, from_=0.0, to=100.0, variable=self.compliance, orient=tk.HORIZONTAL,
                   command=lambda v: self.lbl_comp.config(text=f'Mask Compliance: {float(v):.0f}%')).pack(fill=tk.X)
+        self.lbl_inf = ttk.Label(left_panel, text='Initial Infected: 1', font=('Arial', 10, 'bold'))
+        self.lbl_inf.pack(anchor=tk.W, pady=(10,0))
+        self.initial_infected = tk.IntVar(value=1)
+        ttk.Scale(left_panel, from_=1, to=20, variable=self.initial_infected, orient=tk.HORIZONTAL,
+                  command=lambda v: self.lbl_inf.config(text=f'Initial Infected: {int(float(v))}')).pack(fill=tk.X)
         ttk.Button(left_panel, text='Run Simulation', command=self.run_sim).pack(fill=tk.X, pady=(25,5))
         ttk.Button(left_panel, text='Lock as Scenario A', command=self.save_scenario).pack(fill=tk.X, pady=5)
         ttk.Button(left_panel, text='Export Results', command=self.export_csv).pack(fill=tk.X, pady=5)
@@ -182,7 +187,7 @@ class SimApp:
             
 
 
-            sim.seed_train(initial_on, infectious_count=1)
+            sim.seed_train(initial_on, infectious_count=self.initial_infected.get())
             
 
             results.append({
