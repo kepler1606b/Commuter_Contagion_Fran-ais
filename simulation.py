@@ -26,7 +26,7 @@ class MetroSim:
     #initialise l'état du simulateur de métro et configure les variables de base comme la capacité maximale, la ventilation (ACH) et le compte des passagers 
     def __init__(self):
         self.ach = 10.0
-        self.max_cap = 166 
+        self.max_cap = 126 
         self.mask_compliance = 0.0
         self.mask_eff_in = 0.0  
         self.mask_eff_out = 0.0 
