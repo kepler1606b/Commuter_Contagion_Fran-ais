@@ -85,6 +85,7 @@ class SimApp:
         self.compliance = tk.DoubleVar(value=0.0)
         ttk.Scale(left_panel, from_=0.0, to=100.0, variable=self.compliance, orient=tk.HORIZONTAL,
                   command=lambda v: self.lbl_comp.config(text=f'Mask Compliance: {float(v):.0f}%')).pack(fill=tk.X)
+        
         self.lbl_inf = ttk.Label(left_panel, text='Initial Infected: 1', font=('Arial', 10, 'bold'))
         self.lbl_inf.pack(anchor=tk.W, pady=(10,0))
         self.initial_infected = tk.IntVar(value=1)
