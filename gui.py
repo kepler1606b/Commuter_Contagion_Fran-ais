@@ -72,8 +72,7 @@ class SimApp:
         self.lbl_speed = ttk.Label(left_panel, text='Train Speed (km/h): 40.0', font=('Arial', 10, 'bold'))
         self.lbl_speed.pack(anchor=tk.W, pady=(15,0))
         self.speed = tk.DoubleVar(value=40.0)
-        ttk.Scale(left_panel, from_=15.0, to=80.0, variable=self.speed, orient=tk.HORIZONTAL,
-                  
+        ttk.Scale(left_panel, from_=15.0, to=80.0, variable=self.speed, orient=tk.HORIZONTAL, 
                   command=lambda v: self.lbl_speed.config(text=f'Train Speed (km/h): {float(v):.1f}')).pack(fill=tk.X)
         self.lbl_ach = ttk.Label(left_panel, text='Ventilation ACH: 10.0', font=('Arial', 10, 'bold'))
         self.lbl_ach.pack(anchor=tk.W, pady=(10,0))
@@ -85,7 +84,6 @@ class SimApp:
         self.compliance = tk.DoubleVar(value=0.0)
         ttk.Scale(left_panel, from_=0.0, to=100.0, variable=self.compliance, orient=tk.HORIZONTAL,
                   command=lambda v: self.lbl_comp.config(text=f'Mask Compliance: {float(v):.0f}%')).pack(fill=tk.X)
-        
         self.lbl_inf = ttk.Label(left_panel, text='Initial Infected: 1', font=('Arial', 10, 'bold'))
         self.lbl_inf.pack(anchor=tk.W, pady=(10,0))
         self.initial_infected = tk.IntVar(value=1)
@@ -257,7 +255,7 @@ class SimApp:
         if self.saved_scenario is not None:
             
             
-            self.ax.plot(x, self.saved_scenario['Total'], 'r--x', label='Scenario A')
+            self.ax.plot(range(len(self.saved_scenario)), self.saved_scenario['Total'], 'r--x', label='Scenario A')
             
         self.ax.plot(x, self.results_df['Total'], 'b-o', lw=2, label='Current')
         
